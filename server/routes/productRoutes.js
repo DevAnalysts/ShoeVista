@@ -44,5 +44,6 @@ router.get('/products/filterBy', filterProducts)
 //Route to get list of products
 router.get('/products/:list', listOfProducts)
 
+router.get('/products/best-sellers', getBestSellers);
 
 export default router;

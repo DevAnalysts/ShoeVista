@@ -33,8 +33,13 @@ const ShopBy = ({ filter, title }) => {
   }, []);
 
   return (
-    <>
-      <div className="mt-10 mb-2 text-2xl">{title}</div>
+    <div>
+      <div className="mt-10 mb-2 flex items-center justify-between">
+        <h2 className="text-2xl">{title}</h2>
+        <a href={`/best-sellers`} className="text-sm hover:underline">
+          View All →
+        </a>
+      </div>
       <div className="overflow-x-auto overflow-y-hidden md:max-w-full scroll-container mb-10 mx-auto relative scroll-container">
         {loading && <p>Loading...</p>}
         {error && <p>Error while fetching: {error.message}</p>}
@@ -51,7 +56,7 @@ const ShopBy = ({ filter, title }) => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
