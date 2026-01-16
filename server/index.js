@@ -4,6 +4,8 @@ import cors from "cors";
 import dotenv from "dotenv";
 import router from "./routes/productRoutes.js";
 
+app.use('/api', router);
+
 dotenv.config();
 
 const app = express();
