@@ -90,6 +90,12 @@ const Header = () => {
                                 <img src="/Navbar/cart.png" alt="cart" className='w-6 h-6 hover:scale-110' />
                             </div>
                         </NavLink>
+                         <NavLink
+                            to="/about-us"
+                            onClick={toggleMenu}
+                        >
+                            About Us
+                        </NavLink>
                     </div>
                 </div>
             </div>
