@@ -1,7 +1,7 @@
-import React from "react";
-import Carousel from "../components/Carousel";
-import ShopBy from "../components/ShopBy";
-import GenInfo, { Brands } from "../components/GenInfo";
+import React from "react"
+import Carousel from "../components/Carousel"
+import ShopBy from "../components/ShopBy"
+import GenInfo, { Brands, Sellers } from "../components/GenInfo"
 
 const Home = () => {
   return (
@@ -9,16 +9,18 @@ const Home = () => {
       <Carousel />
       <GenInfo />
       <Brands />
+
       <div className="md:w-full md:max-w-full xs:mx-2  sm:mx-auto ">
         <div className="prose prose-2xl">
           <ShopBy title="Best Sellers" filter="bestSellers" />
+          <Sellers />
         </div>
         <div className="prose prose-2xl">
           <ShopBy title="Top Rated" filter="topRated" />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
