@@ -1,7 +1,7 @@
-import React from "react"
-import Carousel from "../components/Carousel"
-import ShopBy from "../components/ShopBy"
-import GenInfo, { Brands, Sellers } from "../components/GenInfo"
+import React from "react";
+import Carousel from "../components/Carousel";
+import ShopBy from "../components/ShopBy";
+import GenInfo, { Brands, Sellers } from "../components/GenInfo";
 
 const Home = () => {
   return (
@@ -21,6 +21,6 @@ const Home = () => {
       </div>
     </div>
   )
-}
+};
 
-export default Home
+export default Home;
